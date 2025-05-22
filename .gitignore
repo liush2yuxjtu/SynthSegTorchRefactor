@@ -23,7 +23,12 @@ scripts/*.py
 
 SynthSeg/auc_roc_delong.py
 SynthSeg/boxplots.py
-SynthSeg/brain_generator_*
+# Allow brain_generator_torch.py but ignore other brain_generator_* files
+SynthSeg/brain_generator_[^t]*
+SynthSeg/brain_generator_t[^o]*
+SynthSeg/brain_generator_to[^r]*
+SynthSeg/brain_generator_tor[^c]*
+SynthSeg/brain_generator_torc[^h]*
 SynthSeg/check_*
 SynthSeg/predict_synthseg_*
 SynthSeg/predict_vae.py
